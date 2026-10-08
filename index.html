@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مدرسه یادگاری 🌸</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Tahoma, Arial, sans-serif;
+    background: linear-gradient(135deg, #fff0f6, #eee8ff);
+    color: #493653;
+}
+
+header {
+    text-align: center;
+    padding: 35px 15px;
+    background: linear-gradient(135deg, #c084fc, #f9a8d4);
+    color: white;
+    border-radius: 0 0 35px 35px;
+}
+
+header h1 {
+    margin: 0 0 12px;
+    font-size: 30px;
+}
+
+header p {
+    margin: 0;
+}
+
+.container {
+    max-width: 850px;
+    margin: 25px auto;
+    padding: 15px;
+}
+
+.welcome {
+    text-align: center;
+    background: white;
+    padding: 22px;
+    border-radius: 22px;
+    box-shadow: 0 5px 20px #d8b4fe55;
+    margin-bottom: 25px;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.menu button {
+    padding: 14px 5px;
+    border: none;
+    border-radius: 15px;
+    background: #d8b4fe;
+    color: #493653;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.menu button:hover {
+    background: #f9a8d4;
+}
+
+.section {
+    background: white;
+    border-radius: 22px;
+    padding: 22px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 20px #d8b4fe44;
+}
+
+.section h2 {
+    color: #a855f7;
+    margin-top: 0;
+}
+
+.item {
+    background: #fff4fa;
+    border-right: 4px solid #e9a8d4;
+    padding: 13px;
+    margin: 10px 0;
+    border-radius: 12px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #8b5e83;
+}
+
+@media (max-width: 450px) {
+    header h1 {
+        font-size: 25px;
+    }
+
+    .menu {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🌸 مدرسه یادگاری 🌸</h1>
+    <p>جایی برای یادگیری، دوستی و خاطره‌ها 💗</p>
+</header>
+
+<div class="container">
+
+    <div class="welcome">
+        <h2>به مدرسه‌مون خوش اومدین! 🎀</h2>
+        <p>اینجا خونه‌ی کوچیک خاطرات مدرسه‌ی ماست.</p>
+        <p>با هم یاد می‌گیریم، رشد می‌کنیم و خاطره می‌سازیم ✨</p>
+    </div>
+
+    <div class="menu">
+        <button onclick="showSection('students')">
+            👩🏻‍🎓 دانش‌آموزان
+        </button>
+
+        <button onclick="showSection('teachers')">
+            👩🏻‍🏫 معلم‌ها
+        </button>
+
+        <button onclick="showSection('lessons')">
+            📚 درس‌ها
+        </button>
+    </div>
+
+    <div class="section" id="students">
+        <h2>👩🏻‍🎓 دانش‌آموزان کلاس</h2>
+        <div class="item">🌷 ستایش</div>
+        <div class="item">🌷 نازنین</div>
+        <div class="item">🌷 نام دانش‌آموز سوم</div>
+        <div class="item">🌷 نام دانش‌آموز چهارم</div>
+    </div>
+
+    <div class="section" id="teachers">
+        <h2>👩🏻‍🏫 معلم‌های عزیزمون</h2>
+        <div class="item">🍓 نام معلم اول</div>
+        <div class="item">🍓 نام معلم دوم</div>
+        <div class="item">🍓 نام معلم سوم</div>
+    </div>
+
+    <div class="section" id="lessons">
+        <h2>📚 درس‌های ما</h2>
+        <div class="item">✏️ ریاضی</div>
+        <div class="item">🧪 شیمی</div>
+        <div class="item">⚡ فیزیک</div>
+        <div class="item">📐 هندسه</div>
+        <div class="item">📖 ادبیات فارسی</div>
+        <div class="item">🌍 زبان انگلیسی</div>
+        <div class="item">🕌 دین و زندگی</div>
+        <div class="item">📘 عربی</div>
+    </div>
+
+</div>
+
+<footer>
+    ساخته‌شده با عشق برای مدرسه‌مون 💕
+    <br><br>
+    © مدرسه یادگاری
+</footer>
+
+<script>
+function showSection(id) {
+    document.getElementById(id).scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
+}
+</script>
+
+</body>
+</html>
